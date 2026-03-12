@@ -1,10 +1,33 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>My Page</title>
-</head>
-<body>
-  <h1>Hello!</h1>
-  <p>I'm a DH student.</p>
-</body>
+    <head>
+        <title>My personal page</title>
+        <style>
+            h1{color:white; background:olive}
+        </style>
+    </head>
+    <body>
+        <h1>Welcome to my page!</h1>
+        <p>
+            I am DH student.
+        </p>
+        
+    
+        <p>I like</p>
+        <ul>
+            <li>linguistics (studywise)</li>
+            <li>reading (hobbywise)</li>
+            <li>cats (lifewise)</li>
+        </ul>
+        
+        <button onclick="zeigeKatze()">Meow</button>
+
+        <img id="katze" src="Bilder/IMG_5170.JPG" width="500" style="display:none;">
+
+        <script>
+        function zeigeKatze() {
+        document.getElementById("katze").style.display = "block";
+        }
+        </script>
+    </body>
 </html>
