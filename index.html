@@ -16,7 +16,7 @@
             I am a DH student.
         </p>
 
-        <button onclick="closeSection1()">Hide</button> 
+        <button onclick="closeSection("section1")">Hide</button> 
         
         <div id="section1">
         <p>I like
@@ -29,6 +29,7 @@
         </div>
 
         <button onclick="closeSection2()">Hide Section 2</button> 
+        
         <div id="section2">
         <p>This is section 2!</p>
         </div>
@@ -49,6 +50,11 @@
 
         function closeSection2() {
             var section = document.querySelector("#section2");
+            section.style.display="none";
+            };
+
+        function closeSection(sectionID) {
+            var section = document.querySelector(sectionID);
             section.style.display="none";
             };
             
