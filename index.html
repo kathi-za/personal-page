@@ -27,13 +27,21 @@
         </div>
         
         
-        <button onclick="zeigeKatze()">Meow</button>
+        <button onclick="toggleKatze()">Katze anzeigen / verstecken</button>
 
-        <img id="katze" src="Bilder/IMG_5170.JPG" width="500" style="display:none;">
-
+        <div id="katzeBereich" style="display:none;">
+          <p>Meow</p>
+          <img src="Bilder/IMG_5170.JPG" width="600">
+        </div>
         <script>
-        function zeigeKatze() {
-        document.getElementById("katze").style.display = "block";
+        function toggleKatze() {
+          let bereich = document.getElementById("katzeBereich");
+        
+          if (bereich.style.display === "none") {
+            bereich.style.display = "block";
+          } else {
+            bereich.style.display = "none";
+          }
         }
         </script>
     </body>
